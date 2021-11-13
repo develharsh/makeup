@@ -14,7 +14,13 @@ const Layout = ({ children }) => {
   }, [dispatch]);
   return (
     <>
-      <Head></Head>
+      <Head>
+        <link
+          async
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap"
+        />
+      </Head>
       <NavBar />
       <MainDrawer />
       {children}

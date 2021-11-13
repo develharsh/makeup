@@ -1,0 +1,10 @@
+.footerMainDiv {
+  height: 30vh;
+  margin: 0px 5px 0px 5px;
+  border-radius: 5px;
+  background-color: rgb(31, 27, 27);
+  color: #fff;
+}
+.footerMainDiv > div{
+    padding: 13.5vh 0 13.5vh 0;
+}
