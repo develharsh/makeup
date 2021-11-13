@@ -14,3 +14,35 @@ a {
 * {
   box-sizing: border-box;
 }
+.black {
+  color: "#000";
+}
+.red {
+  color: "red";
+}
+.white {
+  color: "#fff";
+}
+.dFlexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.justfyeven {
+  justify-content: space-evenly;
+}
+.mt-2 {
+  margin-top: 20px;
+}
+.mt-3 {
+  margin-top: 30px;
+}
+.textCenter {
+  text-align: center;
+}
+.fontwb {
+  font-weight: bold;
+}
+
+@import url("./client/Signup.css");
+@import url("./loading.css");
+@import url("./client/Login.css");
