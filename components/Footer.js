@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="textCenter">
-        <p>www.blashio.com</p>
+        <p>www.blashio.vercel.app</p>
         <p>&copy; 2021 Blashio</p>
       </div>
     </Fragment>

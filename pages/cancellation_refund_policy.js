@@ -3,11 +3,11 @@ import Link from "next/link";
 const CRP = () => {
   return (
     <div>
-      <MetaData title="Cancellation &amp; Refund Policy | blashio.com" />
+      <MetaData title="Cancellation &amp; Refund Policy | blashio.vercel.app" />
       <div className="px-3 mt-5 mb-5">
         <h1>Cancellation and Refund Policy</h1>
         <p>Last updated: October 16, 2021</p>
-        <p>Thank you for visiting blashio.</p>
+        <p>Thank you for visiting Blashio.</p>
         <p>
           If, for any reason, You are not completely satisfied with our services
           We invite You to review our policy on cancellation &amp; refunds .
@@ -31,7 +31,7 @@ const CRP = () => {
             <p>
               <strong>Company</strong> (referred to as either &quot;the
               Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot;
-              in this Agreement) refers to blashio, Vasant Kunj, New Delhi,
+              in this Agreement) refers to Blashio, Vasant Kunj, New Delhi,
               India.
             </p>
           </li>
@@ -43,7 +43,7 @@ const CRP = () => {
           </li>
           <li>
             <p>
-              <strong>Booking</strong> mean a request by You for services from
+              <strong>Appointment</strong> mean a request by You for services from
               Us.
             </p>
           </li>
@@ -54,10 +54,10 @@ const CRP = () => {
           </li>
           <li>
             <p>
-              <strong>Website</strong> refers to blashio, accessible from{" "}
+              <strong>Website</strong> refers to Blashio, accessible from{" "}
               <Link href="/">
                 <a rel="external nofollow noopener" target="_blank">
-                  www.blashio.com
+                  www.blashio.vercel.app
                 </a>
               </Link>
             </p>
@@ -72,7 +72,7 @@ const CRP = () => {
         </ul>
         <h1>Your Order Cancellation Rights</h1>
         <p>
-          You are entitled to cancel your booking without giving any reason for
+          You are entitled to cancel your appointment without giving any reason for
           doing so.
         </p>
         <p>
@@ -90,16 +90,16 @@ const CRP = () => {
         </ul>
         <p>
           We will reimburse You no later than 30 minutes from the time on which
-          We receive the cancellation for booking. We will use the same means of
-          payment as You used for the booking, and You will not incur any fees
+          We receive the cancellation for appointment. We will use the same means of
+          payment as You used for the appointment, and You will not incur any fees
           for such reimbursement. And, refund will take around 4-6 working days
           to reflect in your bank account.
         </p>
         <p>
-          50% amount of the advance amount paid by you for booking, will get
-          refunded if you cancel the booking before E.C.T(Early Cancellation
+          50% amount of the advance amount paid by you for appointment, will get
+          refunded if you cancel the appointment before E.C.T(Early Cancellation
           Time). No amount will be refunded on cancellation on/after E.C.T(Early
-          Cancellation Time) of the booking.
+          Cancellation Time) of the appointment.
         </p>
         <h2>Contact Us</h2>
         <p>

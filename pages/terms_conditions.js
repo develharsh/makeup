@@ -3,22 +3,22 @@ import Link from "next/link";
 const Terms = () => {
   return (
     <div>
-      <MetaData title="Terms &amp; Conditions | blashio.com" />
+      <MetaData title="Terms &amp; Conditions | blashio.vercel.app" />
       <div className="px-3 mt-5 mb-5">
         <h2>
           <strong>Terms and Conditions</strong>
         </h2>
 
-        <p>Welcome to www.blashio.com!</p>
+        <p>Welcome to www.blashio.vercel.app!</p>
 
         <p>
           These terms and conditions outline the rules and regulations for the
-          use of blashio&apos;s Website, located at www.blashio.com.
+          use of Blashio&apos;s Website, located at www.blashio.vercel.app.
         </p>
 
         <p>
           By accessing this website we assume you accept these terms and
-          conditions. Do not continue to use www.blashio.com if you do not
+          conditions. Do not continue to use www.blashio.vercel.app if you do not
           agree to take all of the terms and conditions stated on this page.
         </p>
 
@@ -46,8 +46,8 @@ const Terms = () => {
         </h3>
 
         <p>
-          We employ the use of cookies. By accessing www.blashio.com, you
-          agreed to use cookies in agreement with the blashio&apos;s Privacy
+          We employ the use of cookies. By accessing www.blashio.vercel.app, you
+          agreed to use cookies in agreement with the Blashio&apos;s Privacy
           Policy.{" "}
         </p>
 
@@ -64,19 +64,19 @@ const Terms = () => {
         </h3>
 
         <p>
-          Unless otherwise stated, blashio and/or its licensors own the
-          intellectual property rights for all material on www.blashio.com.
+          Unless otherwise stated, Blashio and/or its licensors own the
+          intellectual property rights for all material on www.blashio.vercel.app.
           All intellectual property rights are reserved. You may access this
-          from www.blashio.com for your own personal use subjected to
+          from www.blashio.vercel.app for your own personal use subjected to
           restrictions set in these terms and conditions.
         </p>
 
         <p>You must not:</p>
         <ul>
-          <li>Republish material from www.blashio.com</li>
-          <li>Sell, rent or sub-license material from www.blashio.com</li>
-          <li>Reproduce, duplicate or copy material from www.blashio.com</li>
-          <li>Redistribute content from www.blashio.com</li>
+          <li>Republish material from www.blashio.vercel.app</li>
+          <li>Sell, rent or sub-license material from www.blashio.vercel.app</li>
+          <li>Reproduce, duplicate or copy material from www.blashio.vercel.app</li>
+          <li>Redistribute content from www.blashio.vercel.app</li>
         </ul>
 
         <p>This Agreement shall begin on the date hereof .</p>
@@ -84,18 +84,18 @@ const Terms = () => {
         <p>
           Parts of this website offer an opportunity for users to post and
           exchange opinions and information in certain areas of the website.
-          blashio does not filter, edit, publish or review Comments prior to
+          Blashio does not filter, edit, publish or review Comments prior to
           their presence on the website. Comments do not reflect the views and
-          opinions of blashio, its agents and/or affiliates. Comments reflect
+          opinions of Blashio, its agents and/or affiliates. Comments reflect
           the views and opinions of the person who post their views and
-          opinions. To the extent permitted by applicable laws, blashio shall
+          opinions. To the extent permitted by applicable laws, Blashio shall
           not be liable for the Comments or for any liability, damages or
           expenses caused and/or suffered as a result of any use of and/or
           posting of and/or appearance of the Comments on this website.
         </p>
 
         <p>
-          blashio reserves the right to monitor all Comments and to remove any
+          Blashio reserves the right to monitor all Comments and to remove any
           Comments which can be considered inappropriate, offensive or causes
           breach of these Terms and Conditions.
         </p>
@@ -124,7 +124,7 @@ const Terms = () => {
         </ul>
 
         <p>
-          You hereby grant blashio a non-exclusive license to use, reproduce,
+          You hereby grant Blashio a non-exclusive license to use, reproduce,
           edit and authorize others to use, reproduce and edit any of your
           Comments in any and all forms, formats or media.
         </p>
@@ -182,7 +182,7 @@ const Terms = () => {
           that: (a) the link would not make us look unfavorably to ourselves or
           to our accredited businesses; (b) the organization does not have any
           negative records with us; (c) the benefit to us from the visibility of
-          the hyperlink compensates the absence of blashio; and (d) the link
+          the hyperlink compensates the absence of Blashio; and (d) the link
           is in the context of general resource information.
         </p>
 
@@ -216,7 +216,7 @@ const Terms = () => {
         </ul>
 
         <p>
-          No use of blashio&apos;s logo or other artwork will be allowed for
+          No use of Blashio&apos;s logo or other artwork will be allowed for
           linking absent a trademark license agreement.
         </p>
 

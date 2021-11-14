@@ -2,15 +2,15 @@ import MetaData from "../utils/MetaData";
 const Privacy = () => {
   return (
     <div>
-      <MetaData title="Privacy Policy | blashio.com" />
+      <MetaData title="Privacy Policy | blashio.vercel.app" />
       <div className="px-3 mt-5 mb-5">
-        <h1>Privacy Policy for blashio</h1>
+        <h1>Privacy Policy for Blashio</h1>
 
         <p>
-          At blashio, accessible from www.blashio.com, one of our main
+          At Blashio, accessible from www.blashio.vercel.app, one of our main
           priorities is the privacy of our visitors. This Privacy Policy
           document contains types of information that is collected and recorded
-          by www.blashio.com and how we use it.
+          by www.blashio.vercel.app and how we use it.
         </p>
 
         <p>
@@ -21,7 +21,7 @@ const Privacy = () => {
         <p>
           This Privacy Policy applies only to our online activities and is valid
           for visitors to our website with regards to the information that they
-          shared and/or collect in www.blashio.com. This policy is not
+          shared and/or collect in www.blashio.vercel.app. This policy is not
           applicable to any information collected offline or via channels other
           than this website.
         </p>
@@ -74,7 +74,7 @@ const Privacy = () => {
         <h2>Log Files</h2>
 
         <p>
-          www.blashio.com follows a standard procedure of using log files. These
+          www.blashio.vercel.app follows a standard procedure of using log files. These
           files log visitors when they visit websites. All hosting companies do
           this and a part of hosting services&apos; analytics. The information
           collected by log files include internet protocol (IP) addresses,
@@ -89,7 +89,7 @@ const Privacy = () => {
         <h2>Cookies and Web Beacons</h2>
 
         <p>
-          Like any other website, www.blashio.com uses &apos;cookies&apos;.
+          Like any other website, www.blashio.vercel.app uses &apos;cookies&apos;.
           These cookies are used to store information including visitors&apos;
           preferences, and the pages on the website that the visitor accessed or
           visited. The information is used to optimize the users&apos;
@@ -101,13 +101,13 @@ const Privacy = () => {
 
         <p>
           You may consult this list to find the Privacy Policy for each of the
-          advertising partners of www.blashio.com.
+          advertising partners of www.blashio.vercel.app.
         </p>
 
         <p>
           Third-party ad servers or ad networks uses technologies like cookies,
           JavaScript, or Web Beacons that are used in their respective
-          advertisements and links that appear on www.blashio.com, which are
+          advertisements and links that appear on www.blashio.vercel.app, which are
           sent directly to users&apos; browser. They automatically receive your
           IP address when this occurs. These technologies are used to measure
           the effectiveness of their advertising campaigns and/or to personalize
@@ -115,7 +115,7 @@ const Privacy = () => {
         </p>
 
         <p>
-          Note that www.blashio.com has no access to or control over these
+          Note that www.blashio.vercel.app has no access to or control over these
           cookies that are used by third-party advertisers.{" "}
           <b>And currently we do not allow the ads to show on our website.</b>
         </p>
@@ -123,7 +123,7 @@ const Privacy = () => {
         <h2>Third Party Privacy Policies</h2>
 
         <p>
-          www.blashio.com&apos;s Privacy Policy does not apply to other
+          www.blashio.vercel.app&apos;s Privacy Policy does not apply to other
           advertisers or websites. Thus, we are advising you to consult the
           respective Privacy Policies of these third-party ad servers for more
           detailed information. It may include their practices and instructions
@@ -185,7 +185,7 @@ const Privacy = () => {
         </p>
 
         <p>
-          www.blashio.com does not knowingly collect any Personal Identifiable
+          www.blashio.vercel.app does not knowingly collect any Personal Identifiable
           Information from children under the age of 13. If you think that your
           child provided this kind of information on our website, we strongly
           encourage you to contact us immediately and we will do our best

@@ -24,13 +24,13 @@
   transition: all 0.5s;
 }
 .homeSpecsDiv > .home-1 {
-  background-color: MediumVioletRed;
+  background-color: crimson;
 }
 .homeSpecsDiv > .home-2 {
   background-color: indigo;
 }
 .homeSpecsDiv > .home-3 {
-  background-color: rgb(236, 43, 9);
+  background-color: rgb(221, 23, 122);
 }
 .homeSpecsDiv > div > div {
   display: flex;
@@ -44,7 +44,7 @@
 .homeSpecsDiv > div > p {
   text-align: center;
   padding: 3px 3px 3px 3px;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
 }
 .homeSpecsDivPSpan {
   font-weight: bold;

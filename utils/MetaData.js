@@ -5,10 +5,16 @@ const MetaData = ({ title }) => {
     <Fragment>
       <Head>
         <title>{title}</title>
-        <meta name="theme-color" content="purple" />
-        <meta name="description" content="Donot know" />
+        {/*<meta name="theme-color" content="purple" />*/}
+        <meta
+          name="description"
+          content="We provide makeup artists &amp; beauticians at your home"
+        />
         <meta name="lang" content="en" />
-        <meta name="keywords" content="en, sd, sd, sd, sds" />
+        <meta
+          name="keywords"
+          content="makeup, makeover, beaty, beauty-parlour, home makeup, beauty parlours near me, makeup artists near me"
+        />
       </Head>
     </Fragment>
   );

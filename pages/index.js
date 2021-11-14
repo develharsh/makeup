@@ -8,7 +8,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 const index = () => {
   return (
     <Fragment>
-      <MetaData title="Home of Alasca" />
+      <MetaData title="Blashio - Makeup artists &amp; beauticians at Home | www.blashio.vercel.app" />
       <HomeCarousel />
       <div className="homeSpecsDiv dFlexWrap justfyeven white">
         <div className="home-1">
