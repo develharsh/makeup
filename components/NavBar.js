@@ -41,7 +41,9 @@ const NavBar = () => {
               </IconButton>
               <Typography variant="p" component="div" sx={{ flexGrow: 1 }}>
                 <Link href="/">
-                  <a style={{ fontSize: "20px" }}>Alasca Fashion</a>
+                  <a className="navTitle">
+                    Blashio
+                  </a>
                 </Link>
               </Typography>
               {isAuthenticated ? (

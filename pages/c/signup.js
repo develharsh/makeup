@@ -181,6 +181,7 @@ const Signup = () => {
           </div>
         </Fragment>
       )}
+      <div style={{ height: "120px" }}></div>
     </Fragment>
   );
 };

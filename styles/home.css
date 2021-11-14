@@ -9,4 +9,51 @@
   .homeCarouselMargin {
     height: 8px;
   }
+  .homeSpecsDiv > div {
+    margin-top: 0px !important;
+  }
+}
+.homeSpecsDiv > div {
+  max-width: 40vh;
+  margin-top: 3vh;
+  border-radius: 15px;
+}
+.homeSpecsDiv > div:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  transform: translateY(-1vmax);
+  transition: all 0.5s;
+}
+.homeSpecsDiv > .home-1 {
+  background-color: MediumVioletRed;
+}
+.homeSpecsDiv > .home-2 {
+  background-color: indigo;
+}
+.homeSpecsDiv > .home-3 {
+  background-color: rgb(236, 43, 9);
+}
+.homeSpecsDiv > div > div {
+  display: flex;
+  justify-content: center;
+}
+.homeSpecsImg {
+  max-width: 20vh;
+  border-radius: 50%;
+  padding: 2vh 0 0 0;
+}
+.homeSpecsDiv > div > p {
+  text-align: center;
+  padding: 3px 3px 3px 3px;
+  font-family: 'Caveat', cursive;
+}
+.homeSpecsDivPSpan {
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+}
+.homeWhatsapp {
+  margin: 5vh 0 0 0;
+}
+.homeWhatsapp:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }

@@ -2,12 +2,12 @@ import { Fragment } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
-//import Divider from "@mui/material/Divider";
+import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import CloseIcon from "@mui/icons-material/Close";
-import AddIcon from "@mui/icons-material/Add";
+import LoginIcon from "@mui/icons-material/Login";
 import HomeIcon from "@mui/icons-material/Home";
 import { useDispatch, useSelector } from "react-redux";
 import { HIDE_MAIN_DRAWER } from "../redux/constants/designConstants";
@@ -32,7 +32,7 @@ const MainDrawer = () => {
           <ListItemText primary="Close" sx={{ color: "red" }} />
         </ListItem>
 
-        {/*<Divider />*/}
+        <Divider />
 
         <ListItem>
           <ListItemIcon>
@@ -47,11 +47,11 @@ const MainDrawer = () => {
 
         <ListItem>
           <ListItemIcon>
-            <AddIcon sx={{ color: "black" }} />
+            <LoginIcon sx={{ color: "black" }} />
           </ListItemIcon>
-          <Link href="/addProduct">
+          <Link href="/c/login">
             <a>
-              <ListItemText primary="Add New Product" sx={{ color: "black" }} />
+              <ListItemText primary="Log In" sx={{ color: "black" }} />
             </a>
           </Link>
         </ListItem>

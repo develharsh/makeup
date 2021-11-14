@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 html,
 body {
   padding: 0;
@@ -13,6 +15,7 @@ a {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 .black {
   color: "#000";
@@ -21,7 +24,7 @@ a {
   color: "red";
 }
 .white {
-  color: "#fff";
+  color: #fff;
 }
 .dFlexWrap {
   display: flex;
@@ -30,11 +33,20 @@ a {
 .justfyeven {
   justify-content: space-evenly;
 }
+.dFlex {
+  display: flex;
+}
+.justfycent {
+  justify-content: center;
+}
 .mt-2 {
   margin-top: 20px;
 }
 .mt-3 {
   margin-top: 30px;
+}
+.mt-7 {
+  margin-top: 70px;
 }
 .textCenter {
   text-align: center;
@@ -48,3 +60,4 @@ a {
 @import url("./client/Login.css");
 @import url("./home.css");
 @import url("./footer.css");
+@import url("./nav.css");
