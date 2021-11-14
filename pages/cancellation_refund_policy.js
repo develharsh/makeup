@@ -82,7 +82,7 @@ const CRP = () => {
         </p>
         <ul>
           <li>
-            <p>By email: blashio@gmail.com</p>
+            <p>By email: contact.blashio@gmail.com</p>
           </li>
           <li>
             <p>By phone number: +91-7505028002</p>
@@ -108,7 +108,7 @@ const CRP = () => {
         </p>
         <ul>
           <li>
-            <p>By email: blashio@gmail.com</p>
+            <p>By email: contact.blashio@gmail.com</p>
           </li>
           <li>
             <p>By phone number: +91-7055335905</p>

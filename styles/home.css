@@ -19,7 +19,7 @@
   border-radius: 15px;
 }
 .homeSpecsDiv > div:hover {
-  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  box-shadow: 0 0 8px rgba(15, 15, 15, 0.76);
   transform: translateY(-1vmax);
   transition: all 0.5s;
 }
@@ -51,7 +51,8 @@
   font-family: "Rubik", sans-serif;
 }
 .homeWhatsapp {
-  margin: 5vh 0 0 0;
+  margin: 5vh auto 0 auto;
+  width: 34vh;
 }
 .homeWhatsapp:hover {
   transform: scale(1.1);

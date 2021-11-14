@@ -54,7 +54,7 @@ const index = () => {
         </div>
       </div>
       <div className="dFlex justfycent homeWhatsapp">
-        <Link href="http://wa.me/+917055335905?text=Hey%20Blashio,%0AI%20want%20to%20ask%20about:%0A">
+        <Link href="http://wa.me/+917668462359?text=Hey%20Blashio,%0AI%20want%20to%20ask%20about:%0A">
           <a target="_blank">
             <Button
               variant="contained"

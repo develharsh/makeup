@@ -18,7 +18,7 @@ const MainDrawer = () => {
   const { mainDrawer } = useSelector((state) => state.design);
   const list = () => (
     <Box
-      sx={{ width: "auto", backgroundColor: "rgba(0,0,0,0.8)" }}
+      sx={{ width: "auto", backgroundColor: "white" }}
       role="presentation"
       onClick={(e) => {
         dispatch({ type: HIDE_MAIN_DRAWER });
@@ -27,31 +27,31 @@ const MainDrawer = () => {
       <List>
         <ListItem button>
           <ListItemIcon>
-            <CloseIcon sx={{ color: "white" }} />
+            <CloseIcon sx={{ color: "red" }} />
           </ListItemIcon>
-          <ListItemText primary="Close" sx={{ color: "white" }} />
+          <ListItemText primary="Close" sx={{ color: "red" }} />
         </ListItem>
 
         <Divider />
 
         <ListItem>
           <ListItemIcon>
-            <HomeIcon sx={{ color: "white" }} />
+            <HomeIcon sx={{ color: "black" }} />
           </ListItemIcon>
           <Link href="/">
             <a>
-              <ListItemText primary="Home Page" sx={{ color: "white" }} />
+              <ListItemText primary="Home Page" sx={{ color: "black" }} />
             </a>
           </Link>
         </ListItem>
 
         <ListItem>
           <ListItemIcon>
-            <LoginIcon sx={{ color: "white" }} />
+            <LoginIcon sx={{ color: "black" }} />
           </ListItemIcon>
           <Link href="/c/login">
             <a>
-              <ListItemText primary="Log In" sx={{ color: "white" }} />
+              <ListItemText primary="Log In" sx={{ color: "black" }} />
             </a>
           </Link>
         </ListItem>

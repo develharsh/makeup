@@ -4,6 +4,7 @@ import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import PrivacyTipIcon from "@mui/icons-material/PrivacyTip";
 import ReceiptIcon from "@mui/icons-material/Receipt";
 import BusinessIcon from "@mui/icons-material/Business";
+import AddBusinessIcon from "@mui/icons-material/AddBusiness";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 
@@ -30,21 +31,27 @@ const Footer = () => {
               <a> Terms &amp; Conditions</a>
             </Link>
           </p>
+          <p>
+            <BusinessIcon />
+            <Link href="/about_us">
+              <a> About Us</a>
+            </Link>
+          </p>
         </div>
         <div>
           <p>
-            <BusinessIcon /> Vasant Kunj, New Delhi, India
+            <AddBusinessIcon /> Vasant Kunj, New Delhi, India
           </p>
           <p>
             <PhoneIcon />
-            <Link href="tel:+917055335905">
-              <a> +91-7055335905</a>
+            <Link href="tel:+917668462359">
+              <a> +91-7668462359</a>
             </Link>
           </p>
           <p>
             <EmailIcon />
-            <Link href="mailto:blashio@gmail.com">
-              <a> blashio@gmail.com</a>
+            <Link href="mailto:contact.blashio@gmail.com">
+              <a> contact.blashio@gmail.com</a>
             </Link>
           </p>
         </div>
