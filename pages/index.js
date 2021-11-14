@@ -4,11 +4,15 @@ import Link from "next/link";
 import HomeCarousel from "../components/HomeCarousel";
 import Button from "@mui/material/Button";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import Loading from "../components/Loading";
+import { useDispatch, useSelector } from "react-redux";
 
 const index = () => {
+  const { loading } = useSelector((state) => state.auth);
   return (
     <Fragment>
       <MetaData title="Blashio - Makeup artists &amp; beauticians at Home | www.blashio.vercel.app" />
+      <Loading show={loading} />
       <HomeCarousel />
       <div className="homeSpecsDiv dFlexWrap justfyeven white">
         <div className="home-1">

@@ -56,7 +56,6 @@ a {
 }
 
 @import url("./client/Signup.css");
-@import url("./loading.css");
 @import url("./client/Login.css");
 @import url("./home.css");
 @import url("./footer.css");

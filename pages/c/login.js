@@ -61,10 +61,7 @@ const Login = () => {
   return (
     <Fragment>
       <MetaData title="Login User" />
-      {loading ? (
-        <Loading />
-      ) : (
-        <Fragment>
+        <Loading show={loading} />
           <div style={{ height: "6vh" }}></div>
           <Typography
             variant="h6"
@@ -136,8 +133,6 @@ const Login = () => {
               </Link>
             </Stack>
           </div>
-        </Fragment>
-      )}
       <div style={{ height: "150px" }}></div>
     </Fragment>
   );

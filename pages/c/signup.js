@@ -74,113 +74,108 @@ const Signup = () => {
   return (
     <Fragment>
       <MetaData title="Signup User" />
-      {loading ? (
-        <Loading />
-      ) : (
-        <Fragment>
-          <div style={{ height: "4vh" }}></div>
+      <Loading show={loading} />
+      <div style={{ height: "4vh" }}></div>
+      <Typography
+        variant="h6"
+        display="block"
+        sx={{ textAlign: "center", marginBottom: "20px" }}
+        gutterBottom
+      >
+        New User
+      </Typography>
+      <div className="cSignuPmainDiv">
+        <Stack>
+          <FormControl className="cSignuPformControl">
+            <Input
+              type="text"
+              placeholder="Your Name"
+              className="cSignuPinput"
+              name="name"
+              value={name}
+              onChange={(e) => handleChange(e)}
+              startAdornment={
+                <InputAdornment position="start">
+                  <PersonIcon color="secondary" />
+                </InputAdornment>
+              }
+            />
+          </FormControl>
+          <FormControl className="cSignuPformControl">
+            <Input
+              type="email"
+              placeholder="Your Email"
+              className="cSignuPinput"
+              name="email"
+              value={email}
+              onChange={(e) => handleChange(e)}
+              startAdornment={
+                <InputAdornment position="start">
+                  <EmailIcon color="secondary" />
+                </InputAdornment>
+              }
+            />
+          </FormControl>
+          <FormControl className="cSignuPformControl">
+            <Input
+              type="text"
+              placeholder="Your Phone"
+              className="cSignuPinput"
+              sx={{ marginBottom: "9px" }}
+              name="phone"
+              value={phone}
+              onChange={(e) => handleChange(e)}
+              startAdornment={
+                <InputAdornment position="start">
+                  <PhoneIphoneIcon color="secondary" />
+                </InputAdornment>
+              }
+            />
+          </FormControl>
+          <FormControl className="cSignuPformControl">
+            <Input
+              type="password"
+              placeholder="Password"
+              className="cSignuPinput"
+              sx={{ marginBottom: "9px" }}
+              name="password"
+              value={password}
+              onChange={(e) => handleChange(e)}
+              startAdornment={
+                <InputAdornment position="start">
+                  <VpnKeyIcon color="secondary" />
+                </InputAdornment>
+              }
+            />
+          </FormControl>
           <Typography
-            variant="h6"
+            variant="caption"
             display="block"
-            sx={{ textAlign: "center", marginBottom: "20px" }}
+            sx={{ textAlign: "center", marginBottom: "41px" }}
             gutterBottom
           >
-            New User
+            Your information is always safe with us :)
           </Typography>
-          <div className="cSignuPmainDiv">
-            <Stack>
-              <FormControl className="cSignuPformControl">
-                <Input
-                  type="text"
-                  placeholder="Your Name"
-                  className="cSignuPinput"
-                  name="name"
-                  value={name}
-                  onChange={(e) => handleChange(e)}
-                  startAdornment={
-                    <InputAdornment position="start">
-                      <PersonIcon color="secondary" />
-                    </InputAdornment>
-                  }
-                />
-              </FormControl>
-              <FormControl className="cSignuPformControl">
-                <Input
-                  type="email"
-                  placeholder="Your Email"
-                  className="cSignuPinput"
-                  name="email"
-                  value={email}
-                  onChange={(e) => handleChange(e)}
-                  startAdornment={
-                    <InputAdornment position="start">
-                      <EmailIcon color="secondary" />
-                    </InputAdornment>
-                  }
-                />
-              </FormControl>
-              <FormControl className="cSignuPformControl">
-                <Input
-                  type="text"
-                  placeholder="Your Phone"
-                  className="cSignuPinput"
-                  sx={{ marginBottom: "9px" }}
-                  name="phone"
-                  value={phone}
-                  onChange={(e) => handleChange(e)}
-                  startAdornment={
-                    <InputAdornment position="start">
-                      <PhoneIphoneIcon color="secondary" />
-                    </InputAdornment>
-                  }
-                />
-              </FormControl>
-              <FormControl className="cSignuPformControl">
-                <Input
-                  type="password"
-                  placeholder="Password"
-                  className="cSignuPinput"
-                  sx={{ marginBottom: "9px" }}
-                  name="password"
-                  value={password}
-                  onChange={(e) => handleChange(e)}
-                  startAdornment={
-                    <InputAdornment position="start">
-                      <VpnKeyIcon color="secondary" />
-                    </InputAdornment>
-                  }
-                />
-              </FormControl>
-              <Typography
-                variant="caption"
-                display="block"
-                sx={{ textAlign: "center", marginBottom: "41px" }}
-                gutterBottom
-              >
-                Your information is always safe with us :)
-              </Typography>
 
-              <Button
-                variant="contained"
-                color="secondary"
-                endIcon={<PersonAddIcon />}
-                sx={{ marginTop: "10px" }}
-                onClick={handleSubmit}
-              >
-                Register
-              </Button>
-              <Link href="/c/login">
-                <a
-                  className="cSignuPLink mt-2 textCenter fontwb"
-                  style={{ color: "tomato" }}
-                >
-                  Already User? Login
-                </a>
-              </Link>
-            </Stack>
-          </div>
-        </Fragment>
-      )}
+          <Button
+            variant="contained"
+            color="secondary"
+            endIcon={<PersonAddIcon />}
+            sx={{ marginTop: "10px" }}
+            onClick={handleSubmit}
+          >
+            Register
+          </Button>
+          <Link href="/c/login">
+            <a
+              className="cSignuPLink mt-2 textCenter fontwb"
+              style={{ color: "tomato" }}
+            >
+              Already User? Login
+            </a>
+          </Link>
+        </Stack>
+      </div>
       <div style={{ height: "120px" }}></div>
     </Fragment>
   );
