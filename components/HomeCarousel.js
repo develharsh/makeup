@@ -10,7 +10,7 @@ const HomeCarousel = () => {
         <Carousel infiniteLoop autoPlay>
           <div>
             <img src="/5.jpg" />
-            <p className="legend">Regular Makeup</p>
+            <p className="legend">Ceremony Makeup</p>
           </div>
           <div>
             <img src="/2.jpg" />
@@ -27,7 +27,7 @@ const HomeCarousel = () => {
 
           <div>
             <img src="/4.jpg" />
-            <p className="legend">Ceremony Makeup</p>
+            <p className="legend">Regular Makeup</p>
           </div>
         </Carousel>
       </div>
