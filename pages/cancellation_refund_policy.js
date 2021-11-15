@@ -4,7 +4,7 @@ const CRP = () => {
   return (
     <div>
       <MetaData title="Cancellation &amp; Refund Policy | blashio.vercel.app" />
-      <div className="px-5 mt-5 mb-5">
+      <div className="px-10 mt-5 mb-5">
         <h1>Cancellation and Refund Policy</h1>
         <p>Last updated: October 16, 2021</p>
         <p>Thank you for visiting Blashio.</p>
