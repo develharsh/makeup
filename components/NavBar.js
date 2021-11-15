@@ -27,7 +27,7 @@ const NavBar = () => {
       <MainDrawer />
       <Fragment>
         <Box sx={{ flexGrow: 1 }}>
-          <AppBar position="fixed" color="secondary">
+          <AppBar position="fixed" sx={{ backgroundColor: "white" }}>
             <Toolbar>
               <IconButton
                 size="large"
@@ -37,7 +37,7 @@ const NavBar = () => {
                 sx={{ mr: 1 }}
                 onClick={(e) => dispatch({ type: SHOW_MAIN_DRAWER })}
               >
-                <MenuIcon />
+                <MenuIcon color="secondary"/>
               </IconButton>
               <Typography variant="p" component="div" sx={{ flexGrow: 1 }}>
                 <Link href="/">
@@ -67,7 +67,7 @@ const NavBar = () => {
               ) : (
                 <Link href="/c/signup">
                   <a>
-                    <AccountBoxIcon />
+                    <AccountBoxIcon color="secondary" />
                   </a>
                 </Link>
               )}
