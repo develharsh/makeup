@@ -17,7 +17,7 @@ const AboutUs = () => {
           people could get the details of them near them. And could appoint the
           professionals as per best of their choice.
           <br></br>Another problem is that the beauticians, professionals,
-          makeup artists, parolours get only limited clients which come to them
+          makeup artists, parlours get only limited clients which come to them
           either offline or through previous connections. So, most of the time,
           their land up making loss to their work and business by remaining
           idle, because of no appointments or limited appointments. We provide
