@@ -1,5 +1,5 @@
 .navLogoLink{
-    width: 182px;
+    width: 185px;
 }
 .navLogoImg {
   object-fit: cover;
@@ -9,11 +9,12 @@
   border-radius: 0 0 0 11px;
 }
 .navLogoSpan{
-    width: 2px;
+    width: 5px;
     background-color: #fff;
 }
 .navLogo-2 {
-  width: 150px;
-  max-height: 35px;
+  margin-top: 5px;
+  width: 100px;
+  max-height: 20px;
   border-radius: 0 12px 0 0;
 }
