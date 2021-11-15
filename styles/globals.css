@@ -41,6 +41,9 @@ a {
 .justfycent {
   justify-content: center;
 }
+.justfystart {
+  justify-content: start;
+}
 .mt-2 {
   margin-top: 20px;
 }

@@ -1,4 +1,19 @@
-.navTitle{
-    font-family: 'Caveat', cursive;
-    font-size: 25px;
+.navLogoLink{
+    width: 182px;
+}
+.navLogoImg {
+  object-fit: cover;
+}
+.navLogo-1 {
+  width: 30px;
+  border-radius: 0 0 0 11px;
+}
+.navLogoSpan{
+    width: 2px;
+    background-color: #fff;
+}
+.navLogo-2 {
+  width: 150px;
+  max-height: 35px;
+  border-radius: 0 12px 0 0;
 }

@@ -28,6 +28,7 @@ const Layout = ({ children }) => {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap"
         />
+        <link rel="shortcut icon" href="/logomain.png" type="image/x-icon" />
       </Head>
       <NavBar />
       <Loading show={routeChanged} />

@@ -41,8 +41,18 @@ const NavBar = () => {
               </IconButton>
               <Typography variant="p" component="div" sx={{ flexGrow: 1 }}>
                 <Link href="/">
-                  <a className="navTitle">
-                    Blashio
+                  <a className="dFlex justfystart navLogoLink">
+                    <img
+                      src="/logomain.png"
+                      alt="..."
+                      className="navLogo-1 navLogoImg"
+                    />
+                    <span className="navLogoSpan"></span>
+                    <img
+                      src="/logotxt.png"
+                      alt="..."
+                      className="navLogo-2 navLogoImg"
+                    />
                   </a>
                 </Link>
               </Typography>
