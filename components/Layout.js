@@ -28,15 +28,6 @@ const Layout = ({ children }) => {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap"
         />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-212908904-1"
-        ></script>
-        <script async>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'UA-212908904-1');
-        </script>
       </Head>
       <NavBar />
       <Loading show={routeChanged} />
