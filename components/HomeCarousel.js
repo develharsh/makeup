@@ -9,7 +9,7 @@ const HomeCarousel = () => {
       <div style={{ padding: "0px 5px 0px 5px" }}>
         <Carousel infiniteLoop autoPlay>
           <div>
-            <img src="/4.jpg" />
+            <img src="/5.jpg" />
             <p className="legend">Regular Makeup</p>
           </div>
           <div>
@@ -26,7 +26,7 @@ const HomeCarousel = () => {
           </div>
 
           <div>
-            <img src="/5.jpg" />
+            <img src="/4.jpg" />
             <p className="legend">Ceremony Makeup</p>
           </div>
         </Carousel>
