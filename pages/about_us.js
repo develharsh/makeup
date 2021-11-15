@@ -8,7 +8,7 @@ const AboutUs = () => {
       <div className="textCenter">
         <p className="aboutparaWhyF">
           We started Blashio with a vision to give more options to the people
-          who looks for the beauticians, salons, makeup artists, and settle by
+          looking for the beauticians, salons, makeup artists, and settle by
           choosing less optimal options, many times, because of less options of
           professionals. Either they find the salons, parlours, artists,
           beauticians nearby them or through previous connections. What we do
