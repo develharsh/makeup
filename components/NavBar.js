@@ -12,19 +12,17 @@ import { useDispatch, useSelector } from "react-redux";
 import { Fragment } from "react";
 import MainDrawer from "./MainDrawer";
 import { SHOW_MAIN_DRAWER } from "../redux/constants/designConstants";
-import { useToasts } from "react-toast-notifications";
+import SendNotif from "../utils/SendNotif";
 
 const NavBar = () => {
   const dispatch = useDispatch();
-  const { addToast } = useToasts();
   const { isAuthenticated } = useSelector((state) => state.auth);
   const handleLogout = (e) => {
-    addToast("Logged Out.", { appearance: "info" });
+    dispatch(SendNotif("info", "Logged Out."));
     dispatch(logOut());
   };
   return (
     <Fragment>
-      <MainDrawer />
       <Fragment>
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="fixed" sx={{ backgroundColor: "white" }}>
@@ -37,7 +35,7 @@ const NavBar = () => {
                 sx={{ mr: 1 }}
                 onClick={(e) => dispatch({ type: SHOW_MAIN_DRAWER })}
               >
-                <MenuIcon color="secondary"/>
+                <MenuIcon color="secondary" />
               </IconButton>
               <Typography variant="p" component="div" sx={{ flexGrow: 1 }}>
                 <Link href="/">

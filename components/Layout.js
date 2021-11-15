@@ -7,6 +7,7 @@ import Router from "next/router";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { loadUser } from "../redux/actions/userActions";
+import Notify from "./Notify";
 
 const Layout = ({ children }) => {
   const dispatch = useDispatch();
@@ -31,6 +32,7 @@ const Layout = ({ children }) => {
         <link rel="shortcut icon" href="/logomain.png" type="image/x-icon" />
       </Head>
       <NavBar />
+      <Notify />
       <Loading show={routeChanged} />
       <MainDrawer />
       {children}

@@ -20,10 +20,9 @@ import MetaData from "../../utils/MetaData";
 import Loading from "../../components/Loading";
 import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/router";
-import { useToasts } from "react-toast-notifications";
+import SendNotif from "../../utils/SendNotif";
 
 const Signup = () => {
-  const { addToast } = useToasts();
   const router = useRouter();
   const dispatch = useDispatch();
   const { loading, client, message, error } = useSelector(
@@ -31,12 +30,12 @@ const Signup = () => {
   );
   useEffect(() => {
     if (error) {
-      addToast(error, { appearance: "error" });
+      dispatch(SendNotif("error", error));
       dispatch(clearErrors());
     }
     if (client) {
       if (message) {
-        addToast(message, { appearance: "success" });
+        dispatch(SendNotif("success", message));
         dispatch(clearMessages());
       }
       router.push("/");
@@ -51,24 +50,24 @@ const Signup = () => {
   const { name, email, phone, password } = values;
   const handleChange = (e) => {
     const { name, value } = e.target;
+    if (name === "phone" && phone.length >= 10)
+      dispatch(SendNotif("warning", "Phone must be 10 digit long."));
     setValues({ ...values, [name]: value });
   };
   const handleSubmit = (e) => {
-    if (!name) return addToast("Name can't be empty", { appearance: "error" });
+    if (!name) return dispatch(SendNotif("error", "Name can't be empty."));
     if (name.length > 30)
-      return addToast("Name length can't exceed 30 letters.", {
-        appearance: "error",
-      });
+      return dispatch(
+        SendNotif("error", "Name length can't exceed 30 letters.")
+      );
     if (!email.includes("@"))
-      return addToast("Invalid Email.", { appearance: "error" });
-    if (phone.length !== 10)
-      return addToast("Enter 10 digit long phone number.", {
-        appearance: "error",
-      });
+      return dispatch(SendNotif("error", "Invalid Email."));
+    if (phone.length > 10)
+      return dispatch(SendNotif("error", "Phone must be 10 digit long."));
     if (password.length < 8)
-      return addToast("Password must be atleast 8 letters.", {
-        appearance: "error",
-      });
+      return dispatch(
+        SendNotif("error", "Password must be atleast 8 letters.")
+      );
     dispatch(signup(name, email, phone, password));
   };
   return (
