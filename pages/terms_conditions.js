@@ -4,7 +4,7 @@ const Terms = () => {
   return (
     <div>
       <MetaData title="Terms &amp; Conditions | blashio.vercel.app" />
-      <div className="px-3 mt-5 mb-5">
+      <div className="px-5 mt-5 mb-5">
         <h2>
           <strong>Terms and Conditions</strong>
         </h2>

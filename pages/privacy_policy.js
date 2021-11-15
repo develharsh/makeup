@@ -3,7 +3,7 @@ const Privacy = () => {
   return (
     <div>
       <MetaData title="Privacy Policy | blashio.vercel.app" />
-      <div className="px-3 mt-5 mb-5">
+      <div className="px-5 mt-5 mb-5">
         <h1>Privacy Policy for Blashio</h1>
 
         <p>

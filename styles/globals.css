@@ -53,8 +53,14 @@ a {
 .mt-5 {
   margin-top: 50px;
 }
+.mb-5 {
+  margin-bottom: 50px;
+}
 .mt-7 {
   margin-top: 70px;
+}
+.px-5{
+  padding:0 5px 0 5px;
 }
 .textCenter {
   text-align: center;
