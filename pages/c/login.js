@@ -57,7 +57,7 @@ const Login = () => {
   };
   return (
     <Fragment>
-      <MetaData title="Login User" />
+      <MetaData title="Login | Blashio | www.blashio.vercel.app" />
       <Loading show={loading} />
       <div style={{ height: "6vh" }}></div>
       <Typography

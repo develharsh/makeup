@@ -72,7 +72,7 @@ const Signup = () => {
   };
   return (
     <Fragment>
-      <MetaData title="Signup User" />
+      <MetaData title="Signup | Blashio | www.blashio.vercel.app" />
       <Loading show={loading} />
       <div style={{ height: "4vh" }}></div>
       <Typography
