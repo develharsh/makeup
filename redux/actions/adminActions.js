@@ -1,18 +1,18 @@
 import cookie from "react-cookies";
 import {
-  CLIENT_LOGIN_REQUEST,
-  CLIENT_LOGIN_SUCCESS,
-  CLIENT_LOGIN_FAIL,
-  CLIENT_REGISTER_REQUEST,
-  CLIENT_REGISTER_SUCCESS,
-  CLIENT_REGISTER_FAIL,
+  ADMIN_LOGIN_REQUEST,
+  ADMIN_LOGIN_SUCCESS,
+  ADMIN_LOGIN_FAIL,
+  ADMIN_REGISTER_REQUEST,
+  ADMIN_REGISTER_SUCCESS,
+  ADMIN_REGISTER_FAIL,
   CLEAR_ERRORS,
   CLEAR_MESSAGES,
-} from "../constants/clientConstants";
+} from "../constants/adminConstants";
 import { LOAD_USER_SUCCESS } from "../constants/userConstants";
 
 export const signup = (name, email, phone, password) => async (dispatch) => {
-  dispatch({ type: CLIENT_REGISTER_REQUEST });
+  dispatch({ type: ADMIN_REGISTER_REQUEST });
   const config = {
     method: "POST",
     headers: {
@@ -21,7 +21,7 @@ export const signup = (name, email, phone, password) => async (dispatch) => {
     body: JSON.stringify({ name, email, phone, password }),
   };
 
-  await fetch(`/api/v1/client/signup`, config)
+  await fetch(`/api/v1/admin/signup`, config)
     .then((response) => response.json())
     .then((data) => {
       if (data.success) {
@@ -29,26 +29,26 @@ export const signup = (name, email, phone, password) => async (dispatch) => {
           type: LOAD_USER_SUCCESS,
         });
         dispatch({
-          type: CLIENT_REGISTER_SUCCESS,
-          payload: { client: data.user, message: "Registered Successfully." },
+          type: ADMIN_REGISTER_SUCCESS,
+          payload: { admin: data.user, message: "Registered Successfully." },
         });
         cookie.save("token", data.token, { path: "/" });
       } else
         dispatch({
-          type: CLIENT_REGISTER_FAIL,
+          type: ADMIN_REGISTER_FAIL,
           payload: data.message,
         });
     })
     .catch((err) => {
       dispatch({
-        type: CLIENT_REGISTER_FAIL,
+        type: ADMIN_REGISTER_FAIL,
         payload: "Please Try Again.",
       });
     });
 };
 
 export const login = (ID, password) => async (dispatch) => {
-  dispatch({ type: CLIENT_LOGIN_REQUEST });
+  dispatch({ type: ADMIN_LOGIN_REQUEST });
 
   const config = {
     method: "POST",
@@ -58,7 +58,7 @@ export const login = (ID, password) => async (dispatch) => {
     body: JSON.stringify({ ID, password }),
   };
 
-  await fetch(`/api/v1/client/login`, config)
+  await fetch(`/api/v1/admin/login`, config)
     .then((response) => response.json())
     .then((data) => {
       if (data.success) {
@@ -66,19 +66,19 @@ export const login = (ID, password) => async (dispatch) => {
           type: LOAD_USER_SUCCESS,
         });
         dispatch({
-          type: CLIENT_LOGIN_SUCCESS,
-          payload: { client: data.user, message: "Logged In." },
+          type: ADMIN_LOGIN_SUCCESS,
+          payload: { admin: data.user, message: "Logged In." },
         });
         cookie.save("token", data.token, { path: "/" });
       } else
         dispatch({
-          type: CLIENT_LOGIN_FAIL,
+          type: ADMIN_LOGIN_FAIL,
           payload: data.message,
         });
     })
     .catch((err) => {
       dispatch({
-        type: CLIENT_LOGIN_FAIL,
+        type: ADMIN_LOGIN_FAIL,
         payload: "Please Try Again.",
       });
     });

@@ -13,13 +13,16 @@ import { Fragment } from "react";
 import MainDrawer from "./MainDrawer";
 import { SHOW_MAIN_DRAWER } from "../redux/constants/designConstants";
 import SendNotif from "../utils/SendNotif";
+import { useRouter } from "next/router";
 
 const NavBar = () => {
+  const router = useRouter();
   const dispatch = useDispatch();
   const { isAuthenticated } = useSelector((state) => state.auth);
   const handleLogout = (e) => {
     dispatch(SendNotif("info", "Logged Out."));
     dispatch(logOut());
+    router.push("/");
   };
   return (
     <Fragment>

@@ -15,7 +15,7 @@ import {
   signup,
   clearErrors,
   clearMessages,
-} from "../../redux/actions/clientActions";
+} from "../../redux/actions/adminActions";
 import MetaData from "../../utils/MetaData";
 import Loading from "../../components/Loading";
 import { useDispatch, useSelector } from "react-redux";
@@ -25,22 +25,22 @@ import SendNotif from "../../utils/SendNotif";
 const Signup = () => {
   const router = useRouter();
   const dispatch = useDispatch();
-  const { loading, client, message, error } = useSelector(
-    (state) => state.client
+  const { loading, admin, message, error } = useSelector(
+    (state) => state.admin
   );
   useEffect(() => {
     if (error) {
       dispatch(SendNotif("error", error));
       dispatch(clearErrors());
     }
-    if (client) {
+    if (admin) {
       if (message) {
         dispatch(SendNotif("success", message));
         dispatch(clearMessages());
       }
-      router.push("/");
+      router.push("/a/dashboard");
     }
-  }, [dispatch, error, message, client, router]);
+  }, [dispatch, error, message, admin, router]);
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -72,7 +72,7 @@ const Signup = () => {
   };
   return (
     <Fragment>
-      <MetaData title="Signup | Blashio | www.blashio.vercel.app" />
+      <MetaData title="Admin Signup | Blashio | www.blashio.vercel.app" />
       <Loading show={loading} />
       <div style={{ height: "4vh" }}></div>
       <Typography
@@ -81,15 +81,15 @@ const Signup = () => {
         sx={{ textAlign: "center", marginBottom: "20px" }}
         gutterBottom
       >
-        New User
+        New Admin
       </Typography>
-      <div className="cSignuPmainDiv">
+      <div className="admSignuPmainDiv">
         <Stack>
-          <FormControl className="cSignuPformControl">
+          <FormControl className="admSignuPformControl">
             <Input
               type="text"
               placeholder="Your Name"
-              className="cSignuPinput"
+              className="admSignuPinput"
               name="name"
               value={name}
               onChange={(e) => handleChange(e)}
@@ -100,11 +100,11 @@ const Signup = () => {
               }
             />
           </FormControl>
-          <FormControl className="cSignuPformControl">
+          <FormControl className="admSignuPformControl">
             <Input
               type="email"
               placeholder="Your Email"
-              className="cSignuPinput"
+              className="admSignuPinput"
               name="email"
               value={email}
               onChange={(e) => handleChange(e)}
@@ -115,11 +115,11 @@ const Signup = () => {
               }
             />
           </FormControl>
-          <FormControl className="cSignuPformControl">
+          <FormControl className="admSignuPformControl">
             <Input
               type="text"
               placeholder="Your Phone"
-              className="cSignuPinput"
+              className="admSignuPinput"
               sx={{ marginBottom: "9px" }}
               name="phone"
               value={phone}
@@ -131,11 +131,11 @@ const Signup = () => {
               }
             />
           </FormControl>
-          <FormControl className="cSignuPformControl">
+          <FormControl className="admSignuPformControl">
             <Input
               type="password"
               placeholder="Password"
-              className="cSignuPinput"
+              className="admSignuPinput"
               sx={{ marginBottom: "9px" }}
               name="password"
               value={password}
@@ -165,12 +165,12 @@ const Signup = () => {
           >
             Register
           </Button>
-          <Link href="/c/login">
+          <Link href="/a/login">
             <a
-              className="cSignuPLink mt-2 textCenter fontwb"
+              className="admSignuPLink mt-2 textCenter fontwb"
               style={{ color: "tomato" }}
             >
-              Already User? Login
+              Already Admin? Login
             </a>
           </Link>
         </Stack>
@@ -179,4 +179,5 @@ const Signup = () => {
     </Fragment>
   );
 };
+
 export default Signup;

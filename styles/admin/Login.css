@@ -1,0 +1,10 @@
+.admLogiNmainDiv {
+    display: flex;
+    justify-content: center;
+  }
+  .admLogiNformControl {
+    width: 300px;
+  }
+  .admLogiNinput {
+    margin: 0px 0px 20px 0px;
+  }

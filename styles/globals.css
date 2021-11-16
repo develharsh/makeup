@@ -62,8 +62,8 @@ a {
 .mt-7 {
   margin-top: 70px;
 }
-.px-10{
-  padding:0 10px 0 10px;
+.px-10 {
+  padding: 0 10px 0 10px;
 }
 .textCenter {
   text-align: center;
@@ -78,3 +78,5 @@ a {
 @import url("./footer.css");
 @import url("./nav.css");
 @import url("./about.css");
+@import url("./admin/Signup.css");
+@import url("./admin/Login.css");

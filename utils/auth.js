@@ -1,10 +1,10 @@
 const jwt = require("jsonwebtoken");
-//const Team = require("../models/teamModel");
+const Admin = require("../models/adminModel");
 const Client = require("../models/clientModel.js");
 //const Partner = require("../models/partnerModel.js");
 
 const Auth = async (token) => {
-  if (!token || token === "null") {
+  if (!token || token === "undefined") {
     return { success: false };
   }
   let decodedData = null,
@@ -15,8 +15,8 @@ const Auth = async (token) => {
     return { success: false };
   }
 
-  if (decodedData.type === "team") {
-    //req.user = await Team.findById(decodedData.id);
+  if (decodedData.type === "admin") {
+    user = await Admin.findById(decodedData.id);
   } else if (decodedData.type === "client") {
     user = await Client.findById(decodedData.id);
   } else if (decodedData.type === "partner") {

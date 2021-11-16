@@ -1,3 +1,4 @@
+import cookie from "react-cookies";
 import {
   LOGOUT_REQUEST,
   LOGOUT_SUCCESS,
@@ -6,13 +7,15 @@ import {
   LOAD_USER_FAIL,
 } from "../constants/userConstants";
 import { CLIENT_DETAILS, NO_CLIENT } from "../constants/clientConstants";
+import { ADMIN_DETAILS, NO_ADMIN } from "../constants/adminConstants";
+const token = cookie.load("token");
 
 // Load User
 export const loadUser = () => async (dispatch) => {
   dispatch({ type: LOAD_USER_REQUEST });
   const config = {
     method: "GET",
-    headers: { Authorization: window.localStorage.getItem("token") },
+    headers: { Authorization: token },
   };
   await fetch(`/api/v1/common/loadUser`, config)
     .then((response) => response.json())
@@ -23,11 +26,16 @@ export const loadUser = () => async (dispatch) => {
             type: CLIENT_DETAILS,
             payload: data.user,
           });
+        if (data.user.type === "admin")
+          dispatch({
+            type: ADMIN_DETAILS,
+            payload: data.user,
+          });
         dispatch({
           type: LOAD_USER_SUCCESS,
         });
       } else {
-        window.localStorage.removeItem("token");
+        cookie.remove("token", { path: "/" });
         dispatch({ type: LOAD_USER_FAIL });
       }
     })
@@ -40,18 +48,22 @@ export const logOut = () => async (dispatch) => {
   dispatch({ type: LOGOUT_REQUEST });
   const config = {
     method: "GET",
-    headers: { Authorization: window.localStorage.getItem("token") },
+    headers: { Authorization: token },
   };
   await fetch(`/api/v1/common/logout`, config)
     .then((response) => response.json())
     .then((data) => {
-      window.localStorage.removeItem("token");
+      cookie.remove("token", { path: "/" });
       dispatch({
         type: LOGOUT_SUCCESS,
       });
       if (data.type === "client")
         dispatch({
           type: NO_CLIENT,
+        });
+      if (data.type === "admin")
+        dispatch({
+          type: NO_ADMIN,
         });
     });
 };

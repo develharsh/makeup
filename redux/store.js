@@ -4,10 +4,12 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import { authReducer } from "./reducers/userReducers";
 import { clientReducer } from "./reducers/clientReducers";
 import { designReducer } from "./reducers/designReducers";
+import { adminReducer } from "./reducers/adminReducers";
 const reducer = combineReducers({
   design: designReducer,
   auth: authReducer,
   client: clientReducer,
+  admin: adminReducer,
 });
 let initialState = {};
 const middleware = [thunk];
