@@ -1,0 +1,10 @@
+.admServiceAddmainDiv {
+  display: flex;
+  justify-content: center;
+}
+.admServiceAddformControl {
+  width: 300px;
+}
+.admServiceAddinput {
+  margin: 0px 0px 20px 0px;
+}

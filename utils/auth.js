@@ -5,14 +5,14 @@ const Client = require("../models/clientModel.js");
 
 const Auth = async (token) => {
   if (!token || token === "undefined") {
-    return { success: false };
+    return { success: false, message: "Please Login first." };
   }
   let decodedData = null,
     user = null;
   try {
     decodedData = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
   } catch (err) {
-    return { success: false };
+    return { success: false, message: "Please, Login Again." };
   }
 
   if (decodedData.type === "admin") {
@@ -22,7 +22,7 @@ const Auth = async (token) => {
   } else if (decodedData.type === "partner") {
     //req.user = await Partner.findById(decodedData.id);
   }
-  if (!user) return { success: false };
+  if (!user) return { success: false, message: "You are not authorized." };
   return { success: true, user };
 };
 export default Auth;

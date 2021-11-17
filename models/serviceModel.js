@@ -5,11 +5,15 @@ const serviceSchema = new mongoose.Schema(
     name: {
       type: String,
       required: [true, "Name can not be empty."],
-      unique:true
+      unique: true,
     },
-    image: {
+    public_id: {
       type: String,
-      required: [true, "Image can not be empty."]
+      require: [true, "Public Id Missing."],
+    },
+    url: {
+      type: String,
+      require: [true, "Url Missing."],
     },
   },
   {

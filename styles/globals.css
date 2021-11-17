@@ -71,6 +71,9 @@ a {
 .fontwb {
   font-weight: bold;
 }
+input[type="file"] {
+  display: none;
+}
 
 @import url("./client/Signup.css");
 @import url("./client/Login.css");
@@ -80,3 +83,4 @@ a {
 @import url("./about.css");
 @import url("./admin/Signup.css");
 @import url("./admin/Login.css");
+@import url("./admin/new_service.css");
